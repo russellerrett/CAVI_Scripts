@@ -93,7 +93,7 @@ try :
 		## Find HMS active forecast calibration file
 		ActiveFcst = tab.getActiveForecastRun()
 		ActiveAlts = ActiveFcst.getModelAlternatives()
-		ActiveHMSAlt = str(ActiveAlts.get(1))
+		ActiveHMSAlt = str(ActiveAlts.get(1)).replace(" ","_")
 		Current_HMS_fcstFileName1 = os.path.join(forecastDirectory,'hms\\forecast', ""+ActiveHMSAlt+".forecast")
 		Current_HMS_fcstFileName2 = Current_HMS_fcstFileName1.replace("\\", "/")
 		Current_HMS_fcstFileName = Current_HMS_fcstFileName2.replace(",", "")
