@@ -1,6 +1,5 @@
 #from decimal                import Decimal
 #from hec.data.cwmsRating    import RatingSet
-#from hec.data.cwmsRating    import RatingSet
 from hec.hecmath            import TimeSeriesMath
 from hec.io                 import TimeSeriesContainer
 from hec.heclib.dss         import HecDss
