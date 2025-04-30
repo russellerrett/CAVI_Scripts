@@ -111,7 +111,7 @@ def applyOffsets(dssfile, offsets) :
 								output("%s --> %s" % (pathname, tsc.fullName))
 								dss.put(tsc)
 							except :
-								output(traceback.fmt_exc())
+								output(traceback.format_exc())
 		elif progname == "88_to_29" :
 			for bPart in sorted(records.keys()) :
 				if records[bPart].has_key("NORMAL") :
@@ -137,7 +137,7 @@ def applyOffsets(dssfile, offsets) :
 									output("%s --> %s" % (pathname, tsc.fullName))
 									dss.put(tsc)
 								except :
-								    output(traceback.fmt_exc())
+								    output(traceback.format_exc())
 		else :
 			error("Unexpected script name: %s" % progname)
 			
