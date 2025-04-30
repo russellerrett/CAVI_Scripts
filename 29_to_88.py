@@ -136,7 +136,7 @@ def applyOffsets(dssfile, offsets) :
 									tsc.fullName = tsc.fullName.replace(before, after)
 									output("%s --> %s" % (pathname, tsc.fullName))
 									dss.put(tsc)
-							    except :
+								except :
 								    output(traceback.fmt_exc())
 		else :
 			error("Unexpected script name: %s" % progname)
