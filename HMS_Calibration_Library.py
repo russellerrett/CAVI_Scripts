@@ -79,7 +79,7 @@ No_ActiveRSSAlts = len(ActiveAlts)
 if No_ActiveRSSAlts > 1:
 	SelectedHMSAlt = JOptionPane.showInputDialog(None,"Select ResSim Alternative","ResSim Alternative",JOptionPane.PLAIN_MESSAGE,None,ActiveAlts,ActiveAlts[0])
 else:
-	SelectedHMSAlt = ActiveAlts
+	SelectedHMSAlt = ActiveAlts[0]
 ActiveHMSAlt = (str(SelectedHMSAlt)
 	.replace(" ","_")
 	.replace("-","_")
